@@ -12,8 +12,18 @@ button {cursor: pointer;}
 a:focus, a:active {outline: none;}
 label{display: block;}
 /*============================== */
+.footer, .header { 
+    text-align: center;
+    height: 2.5rem;
+    background-color: #21262d ;
+}
+.header { 
+    margin-bottom: 10px;
+}
 .title { 
     align-self: flex-start;
+    margin-bottom: -1.875rem;
+    padding-left: 0.2rem;
 }
 p { 
     margin: 0.625rem 0;
@@ -23,9 +33,6 @@ p {
 }
 input { 
     appearance: none;
-}
-.bayan__title-arrow { 
-    align-self: flex-end;
 }
 body { 
     background-color: #0d1117;
@@ -38,9 +45,10 @@ body {
     cursor: pointer;
 }
 .bayan__title-arrow { 
+    align-self: flex-end;
     display: block;
     object-fit: cover;
-    max-width: 1.25rem;
+    max-width: 1rem;
     margin-right: 0.313rem;
 }
 .bayan__content { 
@@ -57,7 +65,11 @@ body {
     padding: 0.313rem;
     margin-bottom: 0.625rem;
 }
-
+.bayan__meme { 
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
 @media (max-width: 20rem) {
     
 }
@@ -65,7 +77,9 @@ body {
 
 }
 @media (min-width: 51.313rem) {
-
+    .bayan { 
+        width: 37.5rem;
+    }
     .container { 
         margin: 0 auto;
         max-width: 120rem;
@@ -73,18 +87,11 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    .footer, .header { 
-        text-align: center;
-        height: 2.5rem;
-        background-color: #21262d ;
-    }
     h1 { 
         font-size: 2rem;
     }
-    .bayan__meme { 
-        object-fit: cover;
+    .bayan__meme {  
         max-width: 28.125rem;
-        display: block;
     }
     .bayan__content { 
 
@@ -103,6 +110,6 @@ body {
         max-height: 31.25rem;
     }
     .title { 
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 }
