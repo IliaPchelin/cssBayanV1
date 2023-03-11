@@ -4,8 +4,16 @@ h1{font-weight: inherit; font-size: inherit;}
 html, body {height: 100%;}
 .wrapper {min-height: 100%; overflow: hidden;display: flex; flex-direction: column;}
 main {flex: 1 1 auto;}
-label{display: block;}
+label{display: block; -webkit-tap-highlight-color:transparent;}
 /*============================== */
+.container { 
+    margin: 0 auto;
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
 .footer, .header { 
     text-align: center;
     height: 2.5rem;
@@ -65,11 +73,9 @@ body {
     
 }
 @media (max-width: 51.25rem) {
-
-}
-@media (min-width: 51.313rem) {
     .bayan { 
-        width: 37.5rem;
+        max-width: 33rem;
+        width: 100%;
     }
     .container { 
         margin: 0 auto;
@@ -77,6 +83,33 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    h1 { 
+        font-size: 1.5rem;
+    }
+    .bayan__meme {  
+        max-width: 24rem;
+        width: 100%;
+    }
+    .bayan:hover .bayan__content { 
+        max-height: 31.25rem;
+    }
+    .bayan__title-arrow { 
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+    }
+    .bayan__input:checked + .bayan__title-arrow  + .bayan__content{ 
+        max-height: 25rem;
+    }
+    .title { 
+        font-size: 1rem;
+        margin-bottom: -1.5rem;
+        padding-right: 30px;
+    }
+}
+@media (min-width: 51.313rem) {
+    .bayan { 
+        width: 37.5rem;
     }
     h1 { 
         font-size: 2rem;
