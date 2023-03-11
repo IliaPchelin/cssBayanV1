@@ -70,7 +70,12 @@ body {
     display: block;
 }
 @media (max-width: 20rem) {
-    
+    .bayan__title-arrow { 
+        width: 0.8rem;
+    }
+    .title > span { 
+        font-size: 0.8rem;
+    }
 }
 @media (max-width: 51.25rem) {
     .bayan { 
